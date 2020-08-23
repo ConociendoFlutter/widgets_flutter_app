@@ -37,6 +37,14 @@ class HomePage extends StatelessWidget {
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
 
+              ListTile(
+              onTap: () {
+                Navigator.pushNamed(context, 'images');
+              },
+              leading: Icon(Icons.add_photo_alternate),
+              title: Text('Imagenes'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
             
           ],
         ));
