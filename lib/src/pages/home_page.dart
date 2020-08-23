@@ -16,7 +16,18 @@ class HomePage extends StatelessWidget {
               leading: Icon(Icons.add_shopping_cart),
               title: Text('Botones'),
               trailing: Icon(Icons.keyboard_arrow_right),
-            )
+            ),
+
+
+            ListTile(
+              onTap: () {
+                Navigator.pushNamed(context, 'container');
+              },
+              leading: Icon(Icons.cast_connected),
+              title: Text('Container'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
+            
           ],
         ));
   }
