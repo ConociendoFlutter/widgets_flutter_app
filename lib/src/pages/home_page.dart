@@ -27,6 +27,16 @@ class HomePage extends StatelessWidget {
               title: Text('Container'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
+
+              ListTile(
+              onTap: () {
+                Navigator.pushNamed(context, 'stack');
+              },
+              leading: Icon(Icons.add_photo_alternate),
+              title: Text('Stack'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
+
             
           ],
         ));
