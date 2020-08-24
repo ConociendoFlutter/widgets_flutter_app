@@ -17,8 +17,6 @@ class HomePage extends StatelessWidget {
               title: Text('Botones'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
-
-
             ListTile(
               onTap: () {
                 Navigator.pushNamed(context, 'container');
@@ -27,8 +25,7 @@ class HomePage extends StatelessWidget {
               title: Text('Container'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
-
-              ListTile(
+            ListTile(
               onTap: () {
                 Navigator.pushNamed(context, 'stack');
               },
@@ -36,8 +33,7 @@ class HomePage extends StatelessWidget {
               title: Text('Stack'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
-
-              ListTile(
+            ListTile(
               onTap: () {
                 Navigator.pushNamed(context, 'images');
               },
@@ -45,7 +41,14 @@ class HomePage extends StatelessWidget {
               title: Text('Imagenes'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
-            
+            ListTile(
+              onTap: () {
+                Navigator.pushNamed(context, 'cards');
+              },
+              leading: Icon(Icons.card_giftcard),
+              title: Text('Cards'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
           ],
         ));
   }

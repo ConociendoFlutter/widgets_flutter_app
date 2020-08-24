@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_flutter_app/src/pages/botones_page.dart';
+import 'package:widgets_flutter_app/src/pages/cards_page.dart';
 import 'package:widgets_flutter_app/src/pages/container_page.dart';
 import 'package:widgets_flutter_app/src/pages/home_page.dart';
 import 'package:widgets_flutter_app/src/pages/images_page.dart';
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         'botones': (BuildContext context) => BotonesPage(),
         'container': (BuildContext context) => ContainerPage(),
         'stack': (BuildContext context) => StackPage(),
-        'images': (BuildContext context) => ImagesPage()
+        'images': (BuildContext context) => ImagesPage(),
+        'cards': (BuildContext context) => CardsPage()
       },
     );
   }
