@@ -10,7 +10,7 @@ class BotonesPage extends StatelessWidget {
       body: Center(
         child: Container(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             FlatButton(
               onPressed: () {
@@ -39,13 +39,10 @@ class BotonesPage extends StatelessWidget {
                   print('Aplicando seguridad');
                 },
                 child: Icon(Icons.security)),
-
             RaisedButton(
-              onPressed: () {
-                
-              },
+              onPressed: () {},
               color: Colors.pink[100],
-              child: Text('Click') ,
+              child: Text('Click'),
             )
           ],
         )),

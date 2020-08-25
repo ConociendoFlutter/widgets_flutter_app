@@ -5,7 +5,7 @@ class CardsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cards Page'),
+        title: Text('Cards'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(20),

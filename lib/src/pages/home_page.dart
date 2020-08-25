@@ -43,10 +43,10 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Navigator.pushNamed(context, 'cards');
+                Navigator.pushNamed(context, 'circle');
               },
-              leading: Icon(Icons.card_giftcard),
-              title: Text('Cards'),
+              leading: Icon(Icons.account_circle),
+              title: Text('Circle'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
           ],
