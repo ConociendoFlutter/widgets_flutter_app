@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AlertPage extends StatelessWidget {
+  final GlobalKey<ScaffoldState> key = new GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: key,
       appBar: AppBar(
         title: Text('Alertas'),
       ),
@@ -24,7 +27,11 @@ class AlertPage extends StatelessWidget {
               color: Colors.cyanAccent,
             ),
             FlatButton(
-              onPressed: () {},
+              onPressed: () {
+                key.currentState.showSnackBar(SnackBar(
+                  content: Text('Mostrando Snackbar'),
+                ));
+              },
               child: Text('Mostrar Snackbar'),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
