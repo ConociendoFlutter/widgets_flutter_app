@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_flutter_app/src/pages/alert_page.dart';
 import 'package:widgets_flutter_app/src/pages/botones_page.dart';
 import 'package:widgets_flutter_app/src/pages/cards_page.dart';
 import 'package:widgets_flutter_app/src/pages/circle_page.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         'stack': (BuildContext context) => StackPage(),
         'images': (BuildContext context) => ImagesPage(),
         'cards': (BuildContext context) => CardsPage(),
-        'circle': (BuildContext context) => CirclePage()
+        'circle': (BuildContext context) => CirclePage(),
+        'alert': (BuildContext context) => AlertPage()
       },
     );
   }

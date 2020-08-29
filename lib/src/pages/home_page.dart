@@ -49,6 +49,14 @@ class HomePage extends StatelessWidget {
               title: Text('Circle'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
+            ListTile(
+              onTap: () {
+                Navigator.pushNamed(context, 'alert');
+              },
+              leading: Icon(Icons.add_alert),
+              title: Text('Alertas'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
           ],
         ));
   }
