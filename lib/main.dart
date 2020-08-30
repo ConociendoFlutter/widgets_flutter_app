@@ -4,6 +4,7 @@ import 'package:widgets_flutter_app/src/pages/botones_page.dart';
 import 'package:widgets_flutter_app/src/pages/cards_page.dart';
 import 'package:widgets_flutter_app/src/pages/circle_page.dart';
 import 'package:widgets_flutter_app/src/pages/container_page.dart';
+import 'package:widgets_flutter_app/src/pages/formulario_page.dart';
 import 'package:widgets_flutter_app/src/pages/home_page.dart';
 import 'package:widgets_flutter_app/src/pages/images_page.dart';
 import 'package:widgets_flutter_app/src/pages/stack_page.dart';
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
         'images': (BuildContext context) => ImagesPage(),
         'cards': (BuildContext context) => CardsPage(),
         'circle': (BuildContext context) => CirclePage(),
-        'alert': (BuildContext context) => AlertPage()
+        'alert': (BuildContext context) => AlertPage(),
+        'formulario': (BuildContext context) => FormularioPage()
       },
     );
   }

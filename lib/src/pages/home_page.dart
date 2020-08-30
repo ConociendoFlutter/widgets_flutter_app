@@ -51,10 +51,10 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Navigator.pushNamed(context, 'alert');
+                Navigator.pushNamed(context, 'formulario');
               },
-              leading: Icon(Icons.add_alert),
-              title: Text('Alertas'),
+              leading: Icon(Icons.format_align_justify),
+              title: Text('Formularios'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
           ],
