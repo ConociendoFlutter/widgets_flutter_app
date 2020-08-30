@@ -57,6 +57,14 @@ class HomePage extends StatelessWidget {
               title: Text('Formularios'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
+            ListTile(
+              onTap: () {
+                Navigator.pushNamed(context, 'listview');
+              },
+              leading: Icon(Icons.view_list),
+              title: Text('List Views'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
           ],
         ));
   }

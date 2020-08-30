@@ -7,6 +7,7 @@ import 'package:widgets_flutter_app/src/pages/container_page.dart';
 import 'package:widgets_flutter_app/src/pages/formulario_page.dart';
 import 'package:widgets_flutter_app/src/pages/home_page.dart';
 import 'package:widgets_flutter_app/src/pages/images_page.dart';
+import 'package:widgets_flutter_app/src/pages/listView_page.dart';
 import 'package:widgets_flutter_app/src/pages/stack_page.dart';
 
 void main() => runApp(MyApp());
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
         'cards': (BuildContext context) => CardsPage(),
         'circle': (BuildContext context) => CirclePage(),
         'alert': (BuildContext context) => AlertPage(),
-        'formulario': (BuildContext context) => FormularioPage()
+        'formulario': (BuildContext context) => FormularioPage(),
+        'listview': (BuildContext context) => ListViewsPage()
       },
     );
   }
