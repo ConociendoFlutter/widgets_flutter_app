@@ -8,12 +8,27 @@ class ListViewsPage extends StatefulWidget {
 }
 
 class _ListViewsPageState extends State<ListViewsPage> {
+  ScrollController _scroll = new ScrollController();
   List<int> listaNumeros = new List();
 
   @override
   void initState() {
     super.initState();
     addNumberRandom();
+
+    _scroll.addListener(() {
+      if (_scroll.position.pixels == _scroll.position.maxScrollExtent) {
+        addNumberRandom();
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+
+    _scroll.dispose();
   }
 
   @override
@@ -23,6 +38,7 @@ class _ListViewsPageState extends State<ListViewsPage> {
         title: Text('List View'),
       ),
       body: ListView.builder(
+        controller: _scroll,
         itemBuilder: (context, index) {
           return Center(
             child: Text(
@@ -39,7 +55,7 @@ class _ListViewsPageState extends State<ListViewsPage> {
   void addNumberRandom() {
     var rng = new Random();
 
-    for (var i = 0; i < 40; i++) {
+    for (var i = 0; i < 50; i++) {
       listaNumeros.add(rng.nextInt(100));
 
       setState(() {});
