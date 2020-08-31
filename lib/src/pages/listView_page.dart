@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -25,7 +26,6 @@ class _ListViewsPageState extends State<ListViewsPage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
 
     _scroll.dispose();
@@ -37,17 +37,20 @@ class _ListViewsPageState extends State<ListViewsPage> {
       appBar: AppBar(
         title: Text('List View'),
       ),
-      body: ListView.builder(
-        controller: _scroll,
-        itemBuilder: (context, index) {
-          return Center(
-            child: Text(
-              listaNumeros[index].toString(),
-              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-            ),
-          );
-        },
-        itemCount: listaNumeros.length,
+      body: RefreshIndicator(
+        onRefresh: getNumberRandom,
+        child: ListView.builder(
+          controller: _scroll,
+          itemBuilder: (context, index) {
+            return Center(
+              child: Text(
+                listaNumeros[index].toString(),
+                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+              ),
+            );
+          },
+          itemCount: listaNumeros.length,
+        ),
       ),
     );
   }
@@ -60,5 +63,16 @@ class _ListViewsPageState extends State<ListViewsPage> {
 
       setState(() {});
     }
+  }
+
+  Future<Null> getNumberRandom() {
+    final duration = new Duration(seconds: 2);
+    new Timer(duration, () {
+      listaNumeros.clear();
+
+      addNumberRandom();
+    });
+
+    return Future.delayed(duration);
   }
 }
