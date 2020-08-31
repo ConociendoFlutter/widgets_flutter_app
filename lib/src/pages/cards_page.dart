@@ -32,7 +32,7 @@ class CardsPage extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Column(
           children: <Widget>[
-            Text('Mi priemra Card',
+            Text('Mi primera Card',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,

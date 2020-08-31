@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'botones');
               },
               leading: Icon(Icons.add_shopping_cart),
-              title: Text('Botones'),
+              title: Text('Buttons'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
             ListTile(
@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'stack');
               },
               leading: Icon(Icons.add_photo_alternate),
-              title: Text('Stack'),
+              title: Text('Stack Views'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
             ListTile(
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'images');
               },
               leading: Icon(Icons.add_photo_alternate),
-              title: Text('Imagenes'),
+              title: Text('Images'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
             ListTile(
@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'circle');
               },
               leading: Icon(Icons.account_circle),
-              title: Text('Circle'),
+              title: Text('Circle Avatar'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
             ListTile(
@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'formulario');
               },
               leading: Icon(Icons.format_align_justify),
-              title: Text('Formularios'),
+              title: Text('Forms'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
             ListTile(
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'listview');
               },
               leading: Icon(Icons.view_list),
-              title: Text('List Views'),
+              title: Text('ListViews'),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
           ],

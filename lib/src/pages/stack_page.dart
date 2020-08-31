@@ -42,8 +42,8 @@ class StackPage extends StatelessWidget {
               bottomRight: Radius.circular(20),
             ),
             child: Container(
-              height: 150,
-              width: 150,
+              height: 200,
+              width: 200,
               color: Colors.yellowAccent,
             ),
           ),
