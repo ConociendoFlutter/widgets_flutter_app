@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class ListViewsPage extends StatefulWidget {
@@ -27,7 +26,6 @@ class _ListViewsPageState extends State<ListViewsPage> {
   @override
   void dispose() {
     super.dispose();
-
     _scroll.dispose();
   }
 
@@ -57,10 +55,8 @@ class _ListViewsPageState extends State<ListViewsPage> {
 
   void addNumberRandom() {
     var rng = new Random();
-
     for (var i = 0; i < 50; i++) {
       listaNumeros.add(rng.nextInt(100));
-
       setState(() {});
     }
   }
@@ -69,10 +65,8 @@ class _ListViewsPageState extends State<ListViewsPage> {
     final duration = new Duration(seconds: 2);
     new Timer(duration, () {
       listaNumeros.clear();
-
       addNumberRandom();
     });
-
     return Future.delayed(duration);
   }
 }
